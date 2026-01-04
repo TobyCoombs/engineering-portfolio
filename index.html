@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toby Coombs | Aeronautical Engineering Portfolio</title>
+    <style>
+        :root {
+            --primary: #003057; 
+            --secondary: #e74c3c; 
+            --light: #f4f7f6;
+            --dark: #2c3e50;
+            --border: #dcdde1;
+        }
+        
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; color: var(--dark); background-color: #fff; }
+        
+        nav { display: flex; justify-content: center; gap: 20px; background: var(--primary); padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        nav a { text-decoration: none; color: white; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+        nav a:hover { color: var(--secondary); }
+
+        header { padding: 3rem 1rem; text-align: center; background: var(--light); border-bottom: 1px solid var(--border); }
+        header h1 { margin: 0; color: var(--primary); font-size: 2.2rem; }
+        .contact-bar { font-size: 0.9rem; color: #7f8c8d; margin-top: 10px; margin-bottom: 20px; }
+        
+        .btn-download {
+            background-color: var(--secondary);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .btn-download:hover { background-color: #c0392b; }
+
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        section { margin-bottom: 4rem; }
+        h2 { border-left: 5px solid var(--secondary); padding-left: 15px; color: var(--primary); margin-bottom: 1.5rem; }
+
+        .project-card { margin-bottom: 40px; padding: 25px; border: 1px solid var(--border); border-radius: 8px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        
+        .media-row { display: flex; flex-wrap: wrap; gap: 15px; margin: 20px 0; align-items: flex-start; }
+        .media-row img, .media-row video { 
+            width: 300px; 
+            height: auto; 
+            max-height: 250px;
+            object-fit: contain; 
+            border-radius: 6px; 
+            border: 1px solid var(--border);
+            background-color: #f0f0f0;
+        }
+        .caption { font-size: 0.8rem; color: #666; margin-top: 5px; font-style: italic; max-width: 300px; }
+
+        .tag { background: #e1e8ed; color: #2c3e50; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; margin-right: 5px; display: inline-block; margin-bottom: 5px; }
+        .math-block { background: #f9f9f9; padding: 15px; border-radius: 5px; font-family: "serif"; font-size: 1.1rem; border: 1px solid #eee; margin: 15px 0; text-align: center; }
+        
+        footer { text-align: center; padding: 2rem; background: var(--dark); color: white; font-size: 0.8rem; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Engineering Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+</nav>
+
+<header>
+    <h1>Toby Coombs</h1>
+    <p>Aeronautical Engineering | Rensselaer Polytechnic Institute</p>
+    <div class="contact-bar">
+        tobyccareers@gmail.com | (845) 400 6812 | Troy, NY & Nutley, NJ
+    </div>
+    <a href="Resume_Toby_Coombs.pdf" class="btn-download" download>Download Full Resume (PDF)</a>
+</header>
+
+<div class="container">
+
+    <section id="about">
+        <h2>Objective</h2>
+        <p>Leverage my manufacturing experience and aerospace knowledge to provide value to a company through the completion of a challenging internship. </p>
+    </section>
+
+    <section id="projects">
+        <h2>Engineering Projects</h2>
+
+        <div class="project-card">
+            <h3>Marine Hydrofoil Optimization & Composite Fabrication</h3>
+            <p><em>Shipwright - Khura Buri, Thailand </em></p>
+            <ul>
+                <li><strong>Composite Manufacturing:</strong> Utilized hand lay-up techniques with carbon fiber and epoxy, reinforced with a surface layer of Kevlar for impact resistance.</li>
+                <li><strong>Design Methodology:</strong> Dimensioned foils using the Lift equation and planform area calculations to optimize vessel performance.</li>
+                <li><strong>Sea Trial Validation:</strong> Conducted trials in the Andaman Sea to validate lift onset and stability within a target speed band of ~20 kn, assessing ventilation margins and handling in real chop.</li>
+            </ul>
+            
+            <div class="math-block">
+                $$L = \frac{1}{2} \rho v^2 A C_L$$
+            </div>
+
+            <div class="media-row">
+                <div>
+                    <img src="IMG_0135.jpg" alt="Hydrofoil Assembly">
+                    <p class="caption">Prototype assembly and structural testing setup.</p>
+                </div>
+            </div>
+                        <div><span class="tag">Fluid Dynamics</span><span class="tag">Hand Lay-up</span><span class="tag">Carbon Fiber/Kevlar</span><span class="tag">Sea Trials</span></div>
+        </div>
+
+        <div class="project-card">
+            <h3>Magnetic Levitation Prosthetic Interface</h3>
+            <p><em>Inventors Studio II (ISYE 4600-01) - RPI </em></p>
+            <ul>
+                <li><strong>Mechatronic Design:</strong> Developed a magnetic levitation system to eliminate skin irritation by creating a contact-free interface for amputees.</li>
+                <li><strong>Finite Element Analysis (FEA):</strong> Performed simulation on NX CAD software to evaluate structural durability. Simulated forces from 500N to 4500N to determine deformation thresholds.</li>
+                <li><strong>Validated Results:</strong> Confirmed design can withstand up to 2400N of force, ensuring safety for daily activities.</li>
+            </ul>
+            
+            <div class="media-row">
+                <div>
+                    <img src="FEm.png" alt="FEA Results">
+                    <p class="caption">FEA displacement analysis on NX CAD showing stress distribution under 2400N load.</p>
+                </div>
+                <div>
+                    <img src="IMG_5081.jpeg" alt="Control PCB">
+                    <p class="caption">Custom-designed control board for electromagnetic stabilization.</p>
+                </div>
+            </div>
+                        <div><span class="tag">NX CAD</span><span class="tag">FEA Simulation</span><span class="tag">Mechatronics</span><span class="tag">PCB Design</span></div>
+        </div>
+
+        <div class="project-card">
+            <h3>PLA Recycling System: Grinder Subsystem</h3>
+            <p><em>RPI - Introduction to Engineering Design </em></p>
+            <ul>
+                <li><strong>Safety Logic:</strong> Engineered a grinder subsystem featuring a contact sensor with a metal pin at the lid tip to prevent operation while open.</li>
+                <li><strong>Automation:</strong> System activates motor rotation only when sealed shut, ensuring material is safely ground and deposited into the hopper.</li>
+                <li><strong>Collaboration:</strong> Worked within a five-student team to budget and fabricate the full prototype. </li>
+            </ul>
+            <div class="media-row">
+                <div>
+                    <video controls><source src="IMG_4043_compressed.mp4" type="video/mp4"></video>
+                    <p class="caption">Functional test of safety contact sensor and motor activation.</p>
+                </div>
+                <div>
+                    <img src="20231204_085400.jpg" alt="Grinder Interior">
+                    <p class="caption">Internal grinder blade geometry and sensor placement.</p>
+                </div>
+            </div>
+            <div><span class="tag">System Safety</span><span class="tag">Automation</span><span class="tag">Rapid Prototyping</span></div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience-item">
+            <span class="date">Oct-Dec 2024 </span>
+            <h3>Shipwright</h3>
+            <p>Khura Buri, Thailand </p>
+            <ul>
+                <li>Led construction and navigation of a sailboat on the Andaman Sea. </li>
+                <li>Identified critical construction flaws in a 15-meter catamaran restoration. </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills </h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <span class="tag">NX CAD (FEA)</span><span class="tag">Manufacturing</span><span class="tag">Python</span>
+            <span class="tag">MATLAB</span><span class="tag">Autodesk Fusion</span><span class="tag">Numerical Methods</span>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Toby Coombs | Aeronautical Engineering Portfolio</p>
+</footer>
+
+</body>
+</html>
